@@ -17,13 +17,13 @@
                     <a href="{{ route('shop.home.index') }}">
                         @if ($logo = core()->getCurrentChannel()->logo_url)
                             <img
-                                src="{{ $logo }}"
+                            src="{{ Storage::url(core()->getConfigData('general.design.admin_logo.logo_image', core()->getCurrentChannelCode())) }}" alt="{{ config('app.name') }}"
                                 alt="{{ config('app.name') }}"
                                 style="height: 40px; width: 110px;"
                             />
                         @else
                             <img
-                                src="{{ bagisto_asset('images/logo.svg', 'admin') }}"
+                            src="{{ Storage::url(core()->getConfigData('general.design.admin_logo.logo_image', core()->getCurrentChannelCode())) }}" alt="{{ config('app.name') }}"
                                 alt="{{ config('app.name') }}"
                                 style="width: 156px;height: 40px;"
                             />
@@ -38,7 +38,7 @@
                 <p style="font-size: 16px;color: #202B3C;line-height: 24px;">
                     @lang('admin::app.emails.thanks', [
                         'link' => 'mailto:shop@shop.com',
-                        'email' => 'shop@shop.com',
+                        'email' => 'support@rolitoli.com',
                         'style' => 'color: #2969FF;'
                     ])
                 </p>

@@ -3550,4 +3550,6 @@ return [
             'tax'               => 'Tax',
         ],
     ],
+    'key-id'                      => 'Key Id',
+    'key-secret'                      => 'Key Secret',
 ];

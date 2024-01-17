@@ -126,10 +126,9 @@
                 aria-label="Bagisto"
             >
                 <img
-                    src="{{ bagisto_asset('images/logo.svg') }}"
+                    src="{{ Storage::url(core()->getConfigData('general.design.admin_logo.logo_image', core()->getCurrentChannelCode())) }}" alt="{{ config('app.name') }}"
                     alt="Bagisto"
-                    width="131"
-                    height="29"
+                    style="height: 40px; width: 110px;"
                 >
             </a>
         </div>
