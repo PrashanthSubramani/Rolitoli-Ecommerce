@@ -26,6 +26,7 @@ class Currency
      */
     public function handle($request, Closure $next)
     {
+
         if ($currencyCode = request()->get('currency')) {
             if ($this->currencyRepository->findOneByField('code', $currencyCode)) {
                 core()->setCurrentCurrency($currencyCode);

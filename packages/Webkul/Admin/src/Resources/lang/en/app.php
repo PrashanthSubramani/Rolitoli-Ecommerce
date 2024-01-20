@@ -3106,6 +3106,7 @@ return [
                     'accepted-currencies'            => 'Accepted currencies',
                     'accepted-currencies-info'       => 'Add currency code comma separated e.g. USD,INR,...',
                     'business-account'               => 'Business Account',
+
                 ],
 
                 'order-settings' => [
@@ -3550,6 +3551,11 @@ return [
             'tax'               => 'Tax',
         ],
     ],
-    'key-id'                      => 'Key Id',
-    'key-secret'                      => 'Key Secret',
+    'system'=>[
+        'title'                => 'Title',
+        'description'          => 'Description', 
+        'key-id'               => 'Key Id',
+        'key-secret'           => 'Key Secret',
+        'status'               => 'Status'
+    ]
 ];

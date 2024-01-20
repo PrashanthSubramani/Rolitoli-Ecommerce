@@ -24,12 +24,21 @@
                     class="flex min-h-[30px]"
                     aria-label="Bagisto "
                 >
-                    <img
-                        src="{{ bagisto_asset('images/logo.svg') }}"
-                        alt="Bagisto "
-                        width="131"
-                        height="29"
-                    >
+                        @if ($logo = core()->getCurrentChannel()->logo_url)
+                                <img
+                                src="{{ $logo }}"
+                                alt="{{ config('app.name') }}"
+                                style="height: 40px; width: 130px;"
+                            />
+                        @else
+                            <img
+                                src="{{ bagisto_asset('images/logo.svg', 'admin') }}"
+                                alt="{{ config('app.name') }}"
+                                width="131"
+                                height="29"
+                                style="width: 156px;height: 40px;"
+                            />
+                        @endif
                 </a>
             </div>
         </div>
