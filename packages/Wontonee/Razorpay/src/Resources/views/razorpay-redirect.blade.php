@@ -1,4 +1,4 @@
-@extends('shop::layouts.master')
+<x-shop::layouts>
 
 @section('page_title')
     {{ __('RazorPay Checkout....') }}
@@ -52,3 +52,5 @@ window.onload = (event) => {
 
 </script>
 @endpush
+
+</x-shop::layouts>
