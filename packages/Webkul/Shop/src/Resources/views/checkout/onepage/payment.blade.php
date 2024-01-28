@@ -56,7 +56,7 @@
 
                                         <img
                                             class="max-w-[55px] max-h-[45px]"
-                                            :src="paymentImages[payment.method] || '{{ bagisto_asset('images/paypal.png') }}'"
+                                            :src="paymentImages[payment.method] || '{{ bagisto_asset('images/money-transfer.png') }}'"
                                             width="55"
                                             height="55"
                                             :alt="payment.method_title"
