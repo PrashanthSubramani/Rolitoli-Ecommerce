@@ -6,6 +6,16 @@
       0 => 'Astrotomic\\Translatable\\TranslatableServiceProvider',
     ),
   ),
+  'bagisto/bagisto-package-generator' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Webkul\\PackageGenerator\\Providers\\PackageGeneratorServiceProvider',
+    ),
+    'aliases' => 
+    array (
+    ),
+  ),
   'bagisto/laravel-datafaker' => 
   array (
     'providers' => 

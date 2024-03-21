@@ -12,10 +12,7 @@
     <div class="w-full flex justify-between items-center">
         {{-- Left Navigation --}}
         <div class="flex items-center gap-x-[5px]">
-            <x-shop::drawer
-                position="left"
-                width="80%"
-            >
+            <x-shop::drawer position="left" width="80%" >
                 <x-slot:toggle>
                     <span class="icon-hamburger text-[24px] cursor-pointer"></span>
                 </x-slot:toggle>
@@ -24,7 +21,7 @@
                     <div class="flex justify-between items-center">
                         <a href="{{ route('shop.home.index') }}">
                             <img
-                                src="{{ bagisto_asset('images/logo.svg') }}"
+                                src="{{ core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg') }}"
                                 alt="Bagisto"
                                 width="131"
                                 height="29"
@@ -190,7 +187,7 @@
                         <x-slot:content class="!p-[0px]">
                             <div class="grid gap-[10px] p-[20px] pb-0">
                                 <p class="text-[20px] font-dmserif">
-                                    @lang('shop::app.components.layouts.header.welcome')’
+                                    Welcome 
                                     {{ auth()->guard('customer')->user()->first_name }}
                                 </p>
 

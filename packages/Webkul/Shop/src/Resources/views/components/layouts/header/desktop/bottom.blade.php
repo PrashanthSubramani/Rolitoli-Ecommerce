@@ -27,13 +27,6 @@
                         @endif
         </a>
 
-        <v-desktop-category>
-            <div class="flex gap-[20px] items-center pb-[21px]">
-                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
-                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
-                <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
-            </div>
-        </v-desktop-category>
     </div>
 
     {{-- Right Nagivation Section --}}
@@ -127,7 +120,7 @@
                     <x-slot:content class="!p-[0px]">
                         <div class="grid gap-[10px] p-[20px] pb-0">
                             <p class="text-[20px] font-dmserif">
-                                @lang('shop::app.components.layouts.header.welcome')’
+                               Welcome 
                                 {{ auth()->guard('customer')->user()->first_name }}
                             </p>
 
@@ -186,6 +179,20 @@
         </div>
     </div>
 </div>
+
+
+<div class="flex items-center gap-x-[40px] pt-[28px] max-[1180px] shadow p-3 mb-5 bg-white rounded" style="width: 100%;">
+    <v-desktop-category style="width: 100%; justify-content:center;">
+        <div class="flex gap-[20px] items-between pb-[21px]" style="width: 100%;">
+            <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
+            <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
+            <span class="shimmer w-[80px] h-[24px] rounded-[4px]"></span>
+        </div>
+    </v-desktop-category>
+</div>
+
+
+
 
 @pushOnce('scripts')
     <script type="text/x-template" id="v-desktop-category-template">

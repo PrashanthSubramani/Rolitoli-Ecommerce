@@ -3071,6 +3071,15 @@ return [
                         'title-info'  => 'Flat rate shipping is a shipping method where a fixed fee is charged for shipping, regardless of the weight, size, or distance of the package. This simplifies shipping costs and can be advantageous for both buyers and sellers.',
                         'type'        => 'Type',
                     ],
+                    'delhivery-shipping' => [
+                        'description' => 'Description',
+                        'page-title'  => 'Delhivery Shipping',
+                        'rate'        => 'Rate',
+                        'status'      => 'Status',
+                        'title'       => 'Title',
+                        'title-info'  => 'Delhivery shipping is a shipping method where a fixed fee is charged for shipping, regardless of the weight, size, or distance of the package. This simplifies shipping costs and can be advantageous for both buyers and sellers.',
+                        'type'        => 'Type',
+                    ],
                 ],
 
                 'payment-methods' => [

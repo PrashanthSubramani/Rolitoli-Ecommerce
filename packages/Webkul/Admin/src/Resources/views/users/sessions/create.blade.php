@@ -8,8 +8,8 @@
         <div class="flex flex-col gap-[20px] items-center">
             {{-- Logo --}}
             <img 
-                class="w-max" 
-                src="{{ bagisto_asset('images/logo.svg') }}" 
+                width="300"
+                src="{{ core()->getCurrentChannel()->logo_url ?? bagisto_asset('images/logo.svg') }}" 
                 alt="Bagisto Logo"
             >
 

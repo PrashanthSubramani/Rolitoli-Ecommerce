@@ -1,7 +1,7 @@
-<div class="flex justify-between items-center w-full py-[11px] px-16 border border-t-0 border-b-[1px] border-l-0 border-r-0">
+<!-- <div class="flex justify-between items-center w-full py-[11px] px-16 border border-t-0 border-b-[1px] border-l-0 border-r-0">
     {{-- Currency Switcher --}}
     <x-shop::dropdown>
-        <!-- Dropdown Toggler -->
+
         <x-slot:toggle>
             <div class="flex gap-[10px] cursor-pointer">
                 <span>
@@ -12,13 +12,12 @@
             </div>
         </x-slot:toggle>
 
-        <!-- Dropdown Content -->
         <x-slot:content class="!p-[0px]">
             <v-currency-switcher></v-currency-switcher>
         </x-slot:content>
     </x-shop::dropdown>
 
-    <!-- <p class="text-xs font-medium">Get UPTO 40% OFF on your 1st order <a href="#" class="underline">SHOP NOW</a></p> -->
+   
 
     {{-- Locales Switcher --}}
     <x-shop::dropdown position="bottom-right">
@@ -44,7 +43,7 @@
             </div>
         </x-slot:toggle>
     
-        <!-- Dropdown Content -->
+
         <x-slot:content class="!p-[0px]">
             <v-locale-switcher></v-locale-switcher>
         </x-slot:content>
@@ -125,4 +124,4 @@
             }
         });
     </script>
-@endPushOnce
+@endPushOnce -->
